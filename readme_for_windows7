@@ -1,0 +1,15 @@
+Passo-a-passo para executar no windows 7 64bits.
+
+1) Baixar o arquivo wget-1.17.1-win64.zip em https://eternallybored.org/misc/wget/
+2) Descompacte o arquivo zip.
+3) Copiar o arquivo wget.exe para pasta C:\wget
+4) Incluir em Variáveis de ambiente o caminho "C:\wget"
+5) Execute o powershell (já vem no windows 7)
+6) digitar os seguintes comandos: 
+7) > wget --output-document=setup.sh https://raw.githubusercontent.com/rg3915/djangosimples/master/setup.sh
+8) > .\setup.sh myproject 
+9) > cd .\djangoproject
+10) > python -m venv .venv
+11) > .venv\Scripts\Activate.ps1
+12) > pip install django
+13) > python.exe .\manage.py runserver
